@@ -143,225 +143,201 @@
         <div class="contact-area pb-70">
             <div class="container">
 
-                <form id="contactForm" enctype="multipart/form-data">
-                    <h2>Scholarship Application Form</h2>
-                    <p>Please complete all sections of the form below accurately.</p>
-                    <div class="row">
-                
-                        <!-- SECTION 1: Personal Information -->
-                        <h4 class="col-12">Section 1: Personal Information</h4>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Full Name</label>
-                            <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Date of Birth</label>
-                            <input type="date" name="dob" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Gender</label><br>
-                            <div class="form-check">
-                                <input type="radio" name="gender" value="Male" class="form-check-input" required> Male
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="gender" value="Female" class="form-check-input"> Female
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="gender" value="Prefer not to say" class="form-check-input"> Prefer not to say
-                            </div>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Nationality</label>
-                            <input type="text" name="nationality" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>State of Origin / LGA</label>
-                            <input type="text" name="state_lga" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Phone Number</label>
-                            <input type="text" name="phone" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Email Address</label>
-                            <input type="email" name="email" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>Residential Address</label>
-                            <textarea name="address" class="form-control" rows="3" required></textarea>
-                        </div>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>Upload Recent Passport Photograph (Max 10MB)</label>
-                            <input type="file" name="passport_photo" accept="image/*" class="form-control" required>
-                        </div>
-                
-                        <!-- SECTION 2: Educational Background -->
-                        <h4 class="col-12">Section 2: Educational Background</h4>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Current Level of Study</label>
-                            <select name="level_of_study" class="form-control" required>
-                                <option value="">Select</option>
-                                <option>SS3</option>
-                                <option>Undergraduate</option>
-                                <option>Postgraduate</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>If Others, please specify</label>
-                            <input type="text" name="other_level" class="form-control">
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Name of Current School/Institution</label>
-                            <input type="text" name="institution" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Course of Study</label>
-                            <input type="text" name="course" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Year of Admission</label>
-                            <input type="text" name="year_admission" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Expected Year of Graduation</label>
-                            <input type="text" name="year_graduation" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>Upload Academic Transcript / Result Slip</label>
-                            <input type="file" name="transcript" accept="application/pdf,image/*" class="form-control" required>
-                        </div>
-                
-                        <!-- SECTION 3: Parent/Guardian Info -->
-                        <h4 class="col-12">Section 3: Parent/Guardian Information</h4>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Full Name of Parent/Guardian</label>
-                            <input type="text" name="guardian_name" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Relationship to Applicant</label>
-                            <input type="text" name="guardian_relationship" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Phone Number</label>
-                            <input type="text" name="guardian_phone" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Occupation</label>
-                            <input type="text" name="guardian_occupation" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>Parent/Guardian Address</label>
-                            <textarea name="guardian_address" class="form-control" rows="3" required></textarea>
-                        </div>
-                
-                        <!-- SECTION 4: Financial Information -->
-                        <h4 class="col-12">Section 4: Financial Information</h4>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Family Income Range</label><br>
-                            <div class="form-check"><input type="radio" name="income_range" value="Less than ₦50,000" required> Less than ₦50,000</div>
-                            <div class="form-check"><input type="radio" name="income_range" value="₦50,000 – ₦100,000"> ₦50,000 – ₦100,000</div>
-                            <div class="form-check"><input type="radio" name="income_range" value="Above ₦100,000"> Above ₦100,000</div>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Are you currently on any scholarship?</label><br>
-                            <div class="form-check"><input type="radio" name="current_scholarship" value="Yes" required> Yes</div>
-                            <div class="form-check"><input type="radio" name="current_scholarship" value="No"> No</div>
-                        </div>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>If yes, state the name of the scholarship</label>
-                            <input type="text" name="other_scholarship" class="form-control">
-                        </div>
-                
-                        <!-- SECTION 5: Supporting Documents -->
-                        <h4 class="col-12">Section 5: Supporting Documents</h4>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>Upload Admission Letter / Student ID</label>
-                            <input type="file" name="admission_letter" accept="application/pdf,image/*" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>Upload Recommendation Letter (Optional)</label>
-                            <input type="file" name="recommendation_letter" accept="application/pdf,image/*" class="form-control">
-                        </div>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>Upload Proof of Income (Optional)</label>
-                            <input type="file" name="proof_income" accept="application/pdf,image/*" class="form-control">
-                        </div>
-                
-                        <!-- SECTION 6: Essay -->
-                        <h4 class="col-12">Section 6: Essay / Motivation</h4>
-                
-                        <div class="col-lg-12 form-group">
-                            <label>Why do you deserve this scholarship? (300–500 words)</label>
-                            <textarea name="motivation" rows="6" class="form-control" required></textarea>
-                        </div>
-                
-                        <!-- SECTION 7: Declaration -->
-                        <h4 class="col-12">Section 7: Declaration</h4>
-                
-                        <div class="col-lg-12 form-group form-check">
-                            <input type="checkbox" name="declaration" class="form-check-input" required>
-                            <label class="form-check-label">I declare that the information provided is true and accurate to the best of my knowledge.</label>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Type your full name to sign this form</label>
-                            <input type="text" name="declaration_name" class="form-control" required>
-                        </div>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>Date</label>
-                            <input type="date" name="declaration_date" class="form-control" required>
-                        </div>
-                
-                        <!-- Optional Section: Referral -->
-                        <h4 class="col-12">Optional: Referral</h4>
-                
-                        <div class="col-lg-6 form-group">
-                            <label>How did you hear about this scholarship?</label>
-                            <select name="referral_source" class="form-control">
-                                <option value="">Select</option>
-                                <option>Social Media</option>
-                                <option>School</option>
-                                <option>Friend</option>
-                                <option>Website</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                
-                        <!-- Submit Button -->
-                        <div class="col-lg-12 mt-3">
-                            <button type="submit" class="btn common-btn">Submit Application</button>
-                        </div>
-                    </div>
-                </form>
+
+<form id="contactForm">
+  <h2>NGO Scholarship Application Form</h2>
+  <p>Please fill out all required sections accurately.</p>
+
+  <!-- Section 1: Personal Information -->
+  <h4>Section 1: Personal Information</h4>
+  <div class="row">
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-user-alt-3"></i> Full Name</label>
+      <input type="text" class="form-control" name="full_name" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-calendar"></i> Date of Birth</label>
+      <input type="date" class="form-control" name="dob" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-users-alt-3"></i> Gender</label>
+      <select class="form-control" name="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Prefer not to say</option>
+      </select>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-flag-alt-2"></i> Nationality</label>
+      <input type="text" class="form-control" name="nationality" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-map"></i> State of Origin / LGA</label>
+      <input type="text" class="form-control" name="state_lga" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-location-pin"></i> Residential Address</label>
+      <textarea class="form-control" name="address" rows="2" required></textarea>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-ui-call"></i> Phone Number</label>
+      <input type="tel" class="form-control" name="phone" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-ui-email"></i> Email Address</label>
+      <input type="email" class="form-control" name="email" required>
+    </div>
+    <div class="col-lg-12 form-group">
+      <label><i class="icofont-upload-alt"></i> Upload Passport Photo (Max: 10MB)</label>
+      <input type="file" class="form-control-file" name="passport" accept="image/*" required>
+    </div>
+  </div>
+
+  <!-- Section 2: Educational Background -->
+  <h4>Section 2: Educational Background</h4>
+  <div class="row">
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-education"></i> Current Level of Study</label>
+      <select class="form-control" name="level" required>
+        <option value="">Select</option>
+        <option>SS3</option>
+        <option>Undergraduate</option>
+        <option>Postgraduate</option>
+        <option>Others</option>
+      </select>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-school-bag"></i> Name of Institution</label>
+      <input type="text" class="form-control" name="institution" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-book-alt"></i> Course of Study</label>
+      <input type="text" class="form-control" name="course" required>
+    </div>
+    <div class="col-lg-3 form-group">
+      <label><i class="icofont-calendar"></i> Year of Admission</label>
+      <input type="text" class="form-control" name="admission_year" required>
+    </div>
+    <div class="col-lg-3 form-group">
+      <label><i class="icofont-calendar"></i> Expected Graduation</label>
+      <input type="text" class="form-control" name="grad_year" required>
+    </div>
+    <div class="col-lg-12 form-group">
+      <label><i class="icofont-upload-alt"></i> Upload Transcript / Result Slip</label>
+      <input type="file" class="form-control-file" name="transcript" accept=".pdf,image/*" required>
+    </div>
+  </div>
+
+  <!-- Section 3: Parent/Guardian Information -->
+  <h4>Section 3: Parent/Guardian Information</h4>
+  <div class="row">
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-user-alt-3"></i> Full Name of Parent/Guardian</label>
+      <input type="text" class="form-control" name="guardian_name" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-user"></i> Relationship to Applicant</label>
+      <input type="text" class="form-control" name="relationship" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-ui-call"></i> Phone Number</label>
+      <input type="tel" class="form-control" name="guardian_phone" required>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-briefcase"></i> Occupation</label>
+      <input type="text" class="form-control" name="occupation" required>
+    </div>
+    <div class="col-lg-12 form-group">
+      <label><i class="icofont-location-pin"></i> Parent/Guardian Address</label>
+      <textarea class="form-control" name="guardian_address" rows="2" required></textarea>
+    </div>
+  </div>
+
+  <!-- Section 4: Financial Information -->
+  <h4>Section 4: Financial Information</h4>
+  <div class="row">
+    <div class="col-lg-12 form-group">
+      <label><i class="icofont-money"></i> Family Income Range</label>
+      <select class="form-control" name="income" required>
+        <option value="">Select</option>
+        <option>Less than ₦50,000</option>
+        <option>₦50,000 – ₦100,000</option>
+        <option>Above ₦100,000</option>
+      </select>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-check"></i> Are you currently on any scholarship?</label>
+      <select class="form-control" name="on_scholarship" required>
+        <option value="">Select</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+    <div class="col-lg-6 form-group">
+      <label><i class="icofont-info-circle"></i> If yes, state the name</label>
+      <input type="text" class="form-control" name="scholarship_name">
+    </div>
+  </div>
+
+  <!-- Section 5: Supporting Documents -->
+  <h4>Section 5: Supporting Documents</h4>
+  <div class="form-group">
+    <label><i class="icofont-upload-alt"></i> Upload Admission Letter / Student ID</label>
+    <input type="file" class="form-control-file" name="admission_doc" accept=".pdf,image/*" required>
+  </div>
+  <div class="form-group">
+    <label><i class="icofont-upload"></i> Upload Recommendation Letter (Optional)</label>
+    <input type="file" class="form-control-file" name="recommendation" accept=".pdf,image/*">
+  </div>
+  <div class="form-group">
+    <label><i class="icofont-upload"></i> Upload Proof of Income (Optional)</label>
+    <input type="file" class="form-control-file" name="income_proof" accept=".pdf,image/*">
+  </div>
+
+  <!-- Section 6: Essay / Motivation -->
+  <h4>Section 6: Essay / Motivation</h4>
+  <div class="form-group">
+    <label><i class="icofont-comment"></i> Why do you deserve this scholarship? (300–500 words)</label>
+    <textarea class="form-control" name="motivation" rows="5" required></textarea>
+  </div>
+
+  <!-- Section 7: Declaration -->
+  <h4>Section 7: Declaration</h4>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" name="declaration" required>
+    <label class="form-check-label"><i class="icofont-check-circled"></i> I declare that the information provided is true and accurate.</label>
+  </div>
+  <div class="form-group">
+    <label><i class="icofont-pen-alt-3"></i> Type your full name to sign</label>
+    <input type="text" class="form-control" name="signature" required>
+  </div>
+  <div class="form-group">
+    <label><i class="icofont-calendar"></i> Date</label>
+    <input type="date" class="form-control" name="sign_date" required>
+  </div>
+
+  <!-- Optional Section: Referral -->
+  <h4>Optional: Referral</h4>
+  <div class="form-group">
+    <label><i class="icofont-bullhorn"></i> How did you hear about this scholarship?</label>
+    <select class="form-control" name="referral">
+      <option value="">Select</option>
+      <option>Social Media</option>
+      <option>School</option>
+      <option>Friend</option>
+      <option>Website</option>
+      <option>Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">
+      Submit Application
+    </button>
+  </div>
+</form>
+
                 
     
             </div>
